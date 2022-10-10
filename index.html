@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Website</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 border-bottom border-5 border-primary">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Rockets Website</a>
+            
+            <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu" 
+            aria-controls="navmenu" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                     <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                     <a href="nieuws.html" class="nav-link">Nieuws</a>
+                    </li>
+                    <li class="nav-item">
+                     <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center \
+            justify-content-between">
+                <div>
+                    <h1>Alles over <span class="text-warning">
+                        ruimtevaart en rakketen
+                    </span> </h1>
+                    <p class="lead my-4">
+                      Alle nieuwtjes van NASA en andere ruimtevaar maatschappijen
+                    </p>
+                  <a class="btn btn-primary btn-lg" href="nieuws.html">Nieuws</a>
+                </div>
+                <img 
+                class="img-fluid w-50 d-none d-sm-block" 
+                src="images/Space.jpg"
+                />
+            </div>
+        </div>
+    </section>
+    
+    <!--NieuwsBrief-->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between 
+            align-items-center">
+                <h3 class="mb-3 mb-md-0">Meld u aan voor onze Nieuwsbrief</h3>
+                <form>
+                <div class="input-group news-input">
+                    <input type="email" class="form-control" 
+                    placeholder="Typ uw Email:" 
+                    />
+                    <input 
+                      id="meld"
+                      class="btn btn-dark btn-lg" 
+                      type="submit"
+                      id="Button" 
+                      value="Meld aan"
+                    >
+                </div>
+              </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/for_sale.png" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Gevonden sateliet</h1>
+                    <h2>NASA astronaut houd een bordje met "for sale" erop nadat ze een kapotte sateliet in de space shuttle hebben gestopt om gerepareerd te laten worden.</h2>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Mooie foto gemaakt van een station shuttle</h1>
+                    <h3>Als je goed kijkt, 
+                      zie je een achteraanzicht van de vleugels en motoren van Endeavour terwijl de spaceshuttle bovenop het internationale ruimtestation zit. 
+                      Deze afbeelding werd op 23 mei gemaakt door een astronaut aan boord van het Russische Sojoez-ruimtevaartuig terwijl het terugkeerde naar de aarde. 
+                      Het is een nog nooit eerder vertoond perspectief - de allereerste foto's van het station-shuttlecomplex vastgelegd door een vertrekkend vaartuig.</h3>
+                  </div>
+                <img src="images/iss.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Space shuttle</h1>
+                    <h2>De spaceshuttle Endeavour is te zien op lanceerplatform 39a in het Kennedy Space Center in Cape Canaveral, 
+                      Florida, donderdag 28 april 2011.</h2>
+                  </div>
+                <img src="images/shuttle.png" class="d-block w-100">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"></script>
+
+</body>
+</html>

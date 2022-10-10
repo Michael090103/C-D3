@@ -72,7 +72,7 @@
                email: new RegExp("^[\\w-.]+@([\\w-]+\\.)+[\\w-]{2,4}$")
            };
 
-           valid = true;
+           let valid = true;
            if (!RE.name.test(Form.fname)) {
                valid = false;
                alert("Voornaam is ongeldig");
